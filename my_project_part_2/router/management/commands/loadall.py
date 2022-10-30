@@ -6,7 +6,7 @@ from django.core.management import call_command
 
 class Command(BaseCommand):
     help = "Loads fixtures from fixtures dir"
-    fixtures_dir = "fixtures"
+    fixtures_dir = "./fixtures"
     loaddata_command = "loaddata"
     filenames = [
         "router",
